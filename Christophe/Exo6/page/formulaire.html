@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <link rel="stylesheet" href="../assets/style/header.css">
+    <link rel="stylesheet" href="../assets/style/form.css">
+
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>Antoine DIEUDONNE</h1>
+            <h2>Contact</h2>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="../page/tableau.html">Horraires</a></li>
+                <li><a href="../page/formulaire.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Qui est vous ?</legend>
+                    <div class="box">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Martin" required>
+                    </div>
+                    <div class="box">
+                        <label for="lastname">Prénom</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="John" required>
+                    </div>
+                    <div class="box">
+                        <label for="naissance">Date de naissance :</label>
+                        <input type="date" id="naissance" name="naissance" required>
+                    </div>
+                    <div class="box">
+                        <label for="sexe">Sexe: </label>
+                        <input type="radio" id="homme" name="sexe" value="homme"  required>
+                        <label for="homme">Home </label>
+                        <input type="radio" id="femme" name="sexe" value="Femme" required>
+                        <label for="femme">Femme </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sujet de votre question</legend>
+                    <div class="box">
+                        <label for="urgent">Est-ce-urgent?</label>
+                        <input type="checkbox" id="urgent" required>
+                    </div>
+                    <div class="box">
+                        <label for="type">Type de problème :</label>
+                        <select name="type" id="type" required>
+                            <optgroup label="Compte">
+                                <option value="cpt-1">Je n'arrive pas a accéder à mon compte</option>
+                                <option value="cpt-2">je crois que j'ai été piraté</option>
+                                <option value="cpt-3">Je n'arrive pas à change mon mot de passe</option>
+                                <option value="cpt-4">J'ai perdu mes identifiants</option>
+                            </optgroup>
+                            <optgroup label="Achat">
+                                <option value="ach-1">Je n'arrive pas à confirmer mon achat </option>
+                                <option value="ach-2">J'aimerai avoir des nouvelles de ma livraison</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Commentaires</legend>
+                    <div class="box-com">
+
+                        <label for="notes">Notes</label>
+                        <textarea name="notes" id="notes" cols="55" rows="10" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="box-submit">
+                    <input type="submit" value="Envoyer ma question" required>
+                </div>
+        </section>
+        </form>
+    </main>
+</body>
+
+</html>
