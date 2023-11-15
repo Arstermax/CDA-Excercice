@@ -1,0 +1,23 @@
+@import url("./globale.css");
+
+#container-grid{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+}
+
+.box hgroup h2{
+    text-align: center ;
+}
+.box{
+    height: 80vh;
+}
+
+.box:nth-child(1){
+    background-color: var(--blue);
+}
+.box:nth-child(2){
+    background-color: var(--yellow);
+}
+.box:nth-child(3){
+    background-color: var(--red);
+}
