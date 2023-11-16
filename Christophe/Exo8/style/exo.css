@@ -1,0 +1,77 @@
+@import url("./global.css");
+
+hgroup h2 {
+    text-align: start;
+    color: var(--noir);
+}
+
+
+#home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    min-height: 70vh;
+    color: var(--noir);
+
+    & article {
+        border: 0.1rem solid var(--exofond);
+        margin: 0.3rem;
+        width: 23%;
+        display: flex;
+        flex-direction: column;
+
+        & h3 {
+            text-align: center;
+            padding: 1rem;
+            color: var(--noir);
+
+        }
+
+        & figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & figure img {
+            height: 20vh;
+            width: 100%;
+            background-color: var(--exofond);
+
+        }
+
+
+        & p {
+            color: var(--noir);
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #home-container article {
+        width: 48%;
+    }
+
+    #home-container article figure img {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    #home-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #home-container article {
+        width: 80vw;
+    }
+
+
+}

@@ -1,0 +1,13 @@
+@import url("./global.css");
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--exofond);
+    align-items: center;
+    height: 10vh;
+}
+
+footer hgroup h1,h2{
+    text-align: center;
+    color: var(--blanc);
+}

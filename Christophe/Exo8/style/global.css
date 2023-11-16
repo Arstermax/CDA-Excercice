@@ -1,0 +1,21 @@
+:root{
+    --bleu : blue;
+    --blanc : white;
+    --noir : black;
+    --jaune : yellow;
+    --vert: green;
+    --rouge : red;
+
+    --exofond : #1e90ff;
+    --exofondImg : #fca402;
+}   
+
+a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+a:hover{
+    opacity: 0.8;
+}
+

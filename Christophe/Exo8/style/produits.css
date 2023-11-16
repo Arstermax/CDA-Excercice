@@ -1,0 +1,36 @@
+@import url("./global.css");
+
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+    & figure {
+        border: 0.1rem solid;
+        display: flex;
+        border-radius: 3rem;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 50vh;
+        width: 30vw;
+        & h1 {
+            border-bottom: 0.3rem solid  var(--exofondImg);
+            border-radius: 3rem 3rem 0 0;
+            color : var(--blanc);
+            padding: 2rem 2rem;
+            background-color: var(--exofond);
+        }
+
+        & p {
+            padding: 0 1rem 2rem 1rem;
+        }
+    }
+
+}
+
+
+#card figure img {
+    height: 40vh;
+    background-color: var(--exofond);
+}

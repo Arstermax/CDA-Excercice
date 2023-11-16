@@ -1,0 +1,23 @@
+@import url("./style/global.css");
+@import url("./style/header.css");
+@import url("./style/footer.css");
+@import url("./style/flex.css");
+@import url("./style/exo.css");
+@import url("./style/produits.css");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+}
+
+main{
+    min-height: 80vh;
+    width: 100%;
+}
+

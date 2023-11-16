@@ -1,0 +1,36 @@
+@import url("./global.css");
+
+#responsive-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#responsive-flex-container {
+    display: flex;
+    flex-direction: column;
+
+    .box {
+        height: 20vh;
+        width: 20vw;
+    }
+}
+
+#responsive-flex-container .box:nth-child(1) {
+    background-color: var(--jaune);
+}
+
+#responsive-flex-container .box:nth-child(2) {
+    background-color: var(--bleu);
+}
+
+#responsive-flex-container .box:nth-child(3) {
+    background-color: var(--rouge);
+}
+
+@media screen and (min-width : 900px) {
+
+    #responsive-flex-container {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,94 @@
+header {
+    background-color: var(--exofond);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 5rem;
+}
+
+header hgroup {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+#exo {
+    height: 15vh;
+}
+
+#exo hgroup {
+    width: 0vw;
+    padding: 0 0;
+}
+
+header nav h2 {
+    text-align: end;
+    color: var(--noir);
+}
+
+
+header nav ul {
+    width: 40vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header hgroup a img {
+    height: 10vh;
+    width: 8vw;
+    background-color: var(--exofondImg);
+    border-radius: 50%;
+}
+
+#exo nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#exo nav ul li {
+    background-color: var(--exofondImg);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.3rem;
+}
+
+
+@media screen and (max-width:1023px) {
+    #exo nav ul li   {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:426px) {
+    header hgroup a img {
+        display: none;
+        z-index: 1;
+        width: 0;
+    }
+    #exo{
+        height: 20vh;
+        padding: 1rem;
+    }
+    #exo nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        & ul {
+
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            & li  {
+                width: 100%;
+                padding: 0.1rem 0.1rem;
+                text-align: center;
+                margin: 0.1rem;
+            }
+        }
+    }
+}
